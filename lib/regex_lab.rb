@@ -25,9 +25,7 @@ end
  
 
 def valid_phone_number?(phone) 
-  if phone.scan
-    (/([0-9]*){10}|(\[0-9]{3}\)([0-9]{3})-([0-9]{4}\b)/)
-    
+  if phone.scan(/([0-9]*){10}|(\[0-9]{3}\)([0-9]{3})-([0-9]{4}\b)/)
     true 
   else  
     #phone.scan.all?{|number|(/[\d+]{10}/)}
