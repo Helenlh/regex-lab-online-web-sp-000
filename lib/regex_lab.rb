@@ -26,6 +26,7 @@ end
 
 def valid_phone_number?(phone) 
   if phone.scan(/[\d+]/)
+    
     true 
   else  
     #phone.scan.all?{|number|(/[\d+]{10}/)}
